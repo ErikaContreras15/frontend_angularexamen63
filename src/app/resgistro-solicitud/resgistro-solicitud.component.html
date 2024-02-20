@@ -1,0 +1,39 @@
+<p>resgistro-solicitud works!</p>
+<div>
+    <h2>Solicitudes</h2>
+  
+    <form>
+      <label for="cedula">Cedula Cliente:</label>
+      <input type="text" id="cedulaCLiente" name="cedulaCliente" [(ngModel)]="nuevasolicitud.cedula" required>
+  
+      <br>
+  
+      <label for="nombre">NombreCliente:</label>
+      <input type="text" id="nombreCliente" name="nombreCliente" [(ngModel)]="nuevasolicitud.nombre" required>
+  
+      <br>
+  
+      <label for="correoElectronico">correoElectronico:</label>
+      <input type="number" id="correoElectronico" name="correoElectronico" [(ngModel)]="nuevasolicitud.correoElectronico" required>
+  
+      <br>
+
+      <label for="fecha">fecha:</label>
+      <input type="number" id="fecha" name="fecha" [(ngModel)]="nuevasolicitud.fecha" required>
+  
+      <br>
+
+      <label for="monto">monto:</label>
+      <input type="number" id="monto" name="monto" [(ngModel)]="nuevasolicitud.monto" required>
+  
+      <br>
+
+      <label for="meses">meses:</label>
+      <input type="number" id="meses" name="meses" [(ngModel)]="nuevasolicitud.meses" required>
+  
+      <br>
+  
+
+      <button type="button" (click)="realizarSolicitud()">Realizar Solicitud</button>
+    </form>
+  </div>
